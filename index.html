@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+        <!-- Specific fonts here-->
+        <link rel="stylesheet" href="/fonts/Gotham Black Regular.ttf">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <!-- jQuery library -->
@@ -16,11 +20,80 @@
 <body>
     <header>
       <!-- Nav bar -->
-
+        <nav class="navbar">
+            <div class="container">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img src="/img/Logo.png" alt="Logo">
+                </a>
+              </div>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a class="navbar-text" href="#">home</a></li>
+                <li><a class="navbar-text" href="#">service</a></li>
+                <li><a class="navbar-text" href="#">about us</a></li>
+                <li><a class="navbar-text" href="#">pricing table</a></li>
+                <li><a class="navbar-text" href="#">how it work</a></li>
+                <li><a class="navbar-text" href="#">happy clients</a></li>
+                <li><a class="navbar-text" href="#">contact us</a></li>
+              </ul>
+            </div>
+          </nav>
       <!-- /Nav bar -->     
     </header>
     <main>
       <!-- Hero section  -->
+      <div class="container-fluid">
+          <h2>boost up your local business</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis saepe beatae deleniti eius perspiciatis. Reprehenderit fugiat, perferendis qui harum,</p>
+          <div class="container">
+             <form>
+              <div class="form-group row">
+                <div class="col-xs-3">
+                  <label for="ex1"></label>
+                  <input class="form-control" id="ex1" type="text">
+                </div>
+                <div class="col-xs-3">
+                  <label for="ex2"></label>
+                  <input class="form-control" id="ex2" type="text">
+                </div>
+                <div class="col-xs-3">
+                  <label for="ex3"></label>
+                  <input class="form-control" id="ex3" type="text">
+                </div>
+                <div class="col-xs-3">
+                    <label for="ex4"></label>
+                    <input class="btn btn-danger" id="ex4" type="button" value="request a quote">
+                  </div>
+              </div>
+            </form>
+          </div>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+      
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="/img/Laptop.png" alt="Los Angeles">
+          </div>
+
+        </div>
+      
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      </div>
       <!-- /Hero section -->
       <!-- Services section -->
       <!-- /Services section -->
