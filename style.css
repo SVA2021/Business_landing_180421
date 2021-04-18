@@ -18,23 +18,21 @@
 
 .navbar {
     height: 93px;
-    border: 2px solid red ;
 }
 
 .navbar-text {
     color: black;
     text-transform: uppercase;
-    font-size: 14px;
     line-height: 1.2;
     font-family: "Lato_regular";
 }
 
-main :first-child {
+.hero {
     background-color: #709dca;
     color: white;
 }
 
-main > div > h2 {
+.hero > div > h2 {
     margin-top: 110px;
     text-transform: uppercase;
     font-family: "Gotham_black";
@@ -42,17 +40,24 @@ main > div > h2 {
     font-size: 35px;
 }
 
-main > div > p {
+.hero > div > p {
     font-family: "Gotham_black";
     text-align: center;
     font-size: 12px;
     margin-bottom: 30px;
 }
 
+.heroform{
+  margin-bottom: 30px;
+  padding: 0 40px;
+  font-family: sans-serif;
+}
 
 .carousel-inner > .item > img {
-    margin: 0 auto;
+    margin: 50px auto;
   }
+
+
 /*
 .navbar li {
 
