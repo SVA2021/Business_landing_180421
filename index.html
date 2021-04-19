@@ -5,17 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="style.css">
-        <!-- Specific fonts here-->
-        <link rel="stylesheet" href="/fonts/Gotham Black Regular.ttf">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <!-- Specific fonts here-->
+      <script src="https://kit.fontawesome.com/33b08d927a.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -27,8 +20,14 @@
                     <img src="/img/Logo.png" alt="Logo">
                 </a>
               </div>
-              <ul class="nav navbar-nav navbar-right">
-                <li><a class="navbar-text" href="#">home</a></li>
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNavbar">
+                    <span><i class="fas fa-bars"></i> </span>                      
+                </button>
+              </div>
+              <div class="collapse navbar-collapse" id="topNavbar">
+              <ul class="nav navbar-nav navbar-right text-uppercase">
+                <li class="btn-warning"><a class="navbar-text" href="#">home</a></li>
                 <li><a class="navbar-text" href="#">service</a></li>
                 <li><a class="navbar-text" href="#">about us</a></li>
                 <li><a class="navbar-text" href="#">pricing table</a></li>
@@ -36,83 +35,383 @@
                 <li><a class="navbar-text" href="#">happy clients</a></li>
                 <li><a class="navbar-text" href="#">contact us</a></li>
               </ul>
+              </div>
             </div>
           </nav>
       <!-- /Nav bar -->     
     </header>
     <main>
       <!-- Hero section  -->
-      <div class="container-fluid">
-          <h2>boost up your local business</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis saepe beatae deleniti eius perspiciatis. Reprehenderit fugiat, perferendis qui harum,</p>
+      <div class="container-fluid hero">
           <div class="container">
-             <form>
-              <div class="form-group row">
-                <div class="col-xs-3">
-                  <label for="ex1"></label>
-                  <input class="form-control" id="ex1" type="text">
-                </div>
-                <div class="col-xs-3">
-                  <label for="ex2"></label>
-                  <input class="form-control" id="ex2" type="text">
-                </div>
-                <div class="col-xs-3">
-                  <label for="ex3"></label>
-                  <input class="form-control" id="ex3" type="text">
-                </div>
-                <div class="col-xs-3">
-                    <label for="ex4"></label>
-                    <input class="btn btn-danger" id="ex4" type="button" value="request a quote">
+            <h2 class="text-uppercase text-center">boost up your local business</h2>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis saepe beatae deleniti eius perspiciatis. Reprehenderit fugiat, perferendis qui harum,</p>  
+           <div class="row heroform">
+            <form class="form-inline">
+                <div class="col-xs-3 form-group">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-addon"><i class="fas fa-user"></i></span>
+                        <input type="text" class="form-control" placeholder="Full name">
+                    </div>
                   </div>
-              </div>
-            </form>
-          </div>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-      
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-          <div class="item active">
-            <img src="/img/Laptop.png" alt="Los Angeles">
-          </div>
+                <div class="col-xs-3 form-group">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-addon"><i class="fas fa-envelope"></i></span>
+                        <input type="email" class="form-control" placeholder="Email Address">
+                    </div>
+                </div>
+                <div class="col-xs-3 form-group">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-addon"><i class="fas fa-phone-alt"></i></span>
+                        <input type="password" class="form-control" placeholder="Phone number">
+                    </div>
+                </div>
+                <button type="submit" class="col-xs-3 btn btn-lg btn-warning text-uppercase">request a quote</button>
+              </form>
+           </div>
 
-        </div>
-      
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
+          </div>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+            <div class="item active">
+                <img src="/img/Laptop.png" alt="Los Angeles">
+            </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+            </a>
+            </div>
       </div>
       <!-- /Hero section -->
       <!-- Services section -->
+      <div class="container">
+          <div class="text-center services">
+            <h2 class="text-uppercase">our services</h2>
+            <p>Lorem ipsum is simply dummy business industry</p> 
+          </div>
+        <div class="row">
+            <div class="col-sm-6 service-item">
+              <i class="far fa-clock"></i>
+              <h4 class="text-uppercase">Font-Awesome Icons</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standarts dummy text ever since the 1500's, when an unknown printer</p>
+            </div>
+            <div class="col-sm-6 service-item">
+                <i class="fas fa-cog"></i>
+                <h4 class="text-uppercase">fully responsive design</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standarts dummy text ever since the 1500's, when an unknown printer</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 service-item">
+                <i class="fas fa-graduation-cap"></i>
+                <h4 class="text-uppercase">working contact form</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standarts dummy text ever since the 1500's, when an unknown printer</p>
+              </div>
+              <div class="col-sm-6 service-item">
+                <i class="fas fa-rocket"></i>
+                  <h4 class="text-uppercase">retina ready icons here</h4>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standarts dummy text ever since the 1500's, when an unknown printer</p>
+              </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 service-item">
+                <i class="far fa-file-code"></i>
+                <h4 class="text-uppercase">friendly code</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standarts dummy text ever since the 1500's, when an unknown printer</p>
+              </div>
+              <div class="col-sm-6 service-item">
+                <i class="fas fa-dollar-sign"></i>
+                  <h4 class="text-uppercase">flat trendy landing page design</h4>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standarts dummy text ever since the 1500's, when an unknown printer</p>
+              </div>
+        </div>
+      </div>
       <!-- /Services section -->
       <!-- About us section -->
+      <div class="aboutUs">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-sm-6">
+                      <img class="img-responsive" src="/img/aboutUs.png" alt="aboutUs">
+                  </div>
+                  <div class="col-sm-6 aboutUs-text">
+                      <h3 class="text-uppercase">about us</h3>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium explicabo velit quas amet ipsum dolores eius praesentium blanditiis, iure ab temporibus quae aliquam quia. Similique facilis at nulla repellat nihil.</p>
+                      <button type="submit" class="btn btn-lg btn-warning text-uppercase">read more</button>
+                  </div>
+              </div>
+          </div>
+      </div>
       <!-- /About Us section -->
       <!-- Price options section -->
+      <div class="price">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="text-uppercase">choose your price</h2>
+                <p>Lorem ipsum is simply dummy business industry</p> 
+              </div>
+        <div class="row-no-gutters price-panel text-center text-uppercase">
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h3>basic plan</h3>
+                        <div class="price-current">
+                            <strong><i class="fas fa-dollar-sign"></i>22</strong>
+                            <p>per month</p>
+                            <p>  &nbsp; </p>
+                            <hr>
+                            <p>1 account</p><hr>
+                            <p>8 hours support</p><hr>
+                            <p>custom cloud services</p>
+                            <p>  &nbsp; </p>
+                            <button type="submit" class="btn btn-lg btn-warning text-uppercase">get started</button>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-default premium">
+                    <div class="panel-body">
+                        <h3>premium plan</h3>
+                        <div class="price-current">
+                            <strong><i class="fas fa-dollar-sign"></i>42</strong>
+                            <p>per month</p>
+                            <p>  &nbsp; </p>
+                            <hr>
+                            <p>2 account</p><hr>
+                            <p>100mb storage</p><hr>
+                            <p>custom cloud services</p>
+                            <p>  &nbsp; </p>
+                            <button type="submit" class="btn btn-lg btn-warning text-uppercase">get started</button>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h3>gold plan</h3>
+                        <div class="price-current">
+                            <strong><i class="fas fa-dollar-sign"></i>62</strong>
+                            <p>per month</p>
+                            <p>  &nbsp; </p>
+                            <hr>
+                            <p>8 account</p><hr>
+                            <p>24 hours support</p><hr>
+                            <p>custom cloud services</p>
+                            <p>  &nbsp; </p>
+                            <button type="submit" class="btn btn-lg btn-warning text-uppercase">get started</button>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
       <!-- /Price options section -->
       <!-- How it works section -->
+      <div class="hiw">
+          <div class="container">
+            <div class="text-center">
+                <h2 class="text-uppercase">how it works</h2>
+                <p>Lorem ipsum is simply dummy business industry</p> 
+            </div>
+            <div class="row-no-gutters flow text-center">
+                  <div class="col-sm-3">
+                    <i class="fas fa-headphones"></i>
+                    <i class="fas fa-arrow-right"></i>
+                  </div>
+                  <div class="col-sm-3">
+                    <i class="fas fa-arrow-left"></i>
+                    <i class="fas fa-unlock"></i>
+                    <i class="fas fa-arrow-right"></i>
+                  </div>
+                  <div class="col-sm-3">
+                    <i class="fas fa-arrow-left"></i>
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <i class="fas fa-arrow-right"></i>
+                  </div>
+                  <div class="col-sm-3">
+                    <i class="fas fa-arrow-left"></i>
+                    <i class="fas fa-thumbs-up"></i>
+                  </div>
+            </div>
+          <div class="row text-center flowstep">
+              <div class="col-sm-3">
+                  <h4 class="text-uppercase">step 1</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam corrupti necessitatibus, consequatur eligendi quam natus at. Dicta id exercitationem aperiam reprehenderit molestiae praesentium, laborum optio magni cum ratione voluptate. Repudiandae!</p>
+              </div>
+              <div class="col-sm-3">
+                <h4 class="text-uppercase">step 2</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam corrupti necessitatibus, consequatur eligendi quam natus at. Dicta id exercitationem aperiam reprehenderit molestiae praesentium, laborum optio magni cum ratione voluptate. Repudiandae!</p>
+              </div>
+              <div class="col-sm-3">
+                <h4  class="text-uppercase">step 3</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam corrupti necessitatibus, consequatur eligendi quam natus at. Dicta id exercitationem aperiam reprehenderit molestiae praesentium, laborum optio magni cum ratione voluptate. Repudiandae!</p>
+              </div>
+              <div class="col-sm-3">                  
+                <h4 class="text-uppercase">step 4</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam corrupti necessitatibus, consequatur eligendi quam natus at. Dicta id exercitationem aperiam reprehenderit molestiae praesentium, laborum optio magni cum ratione voluptate. Repudiandae!</p>
+           </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-sm-12 text-center">
+            <button type="submit" class="btn btn-lg btn-warning text-uppercase">get start now</button>
+          </div>
+      </div>
+      </div>
       <!-- /How it works section -->
       <!-- Clients section -->
+      <div class="clients">
+          <div class="container">
+            <div class="text-center clients-head">
+                <h2 class="text-uppercase">happy clients</h2>
+                <p>Lorem ipsum is simply dummy business industry</p> 
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <img src="/img/client_1.png" alt="client_face">
+                        <blockquote>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa blanditiis dignissimos eius doloremque nam illum rem id architecto reiciendis natus, totam sint praesentium, minus quia dolorem tempore, corrupti mollitia.</p>
+                            <footer class="text-uppercase"><span>darwin michele </span> project manager</footer>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <img src="/img/client_2.png" alt="client_face">
+                        <blockquote>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa blanditiis dignissimos eius doloremque nam illum rem id architecto reiciendis natus, totam sint praesentium, minus quia dolorem tempore, corrupti mollitia.</p>
+                            <footer class="text-uppercase"><span>madam elisabeth </span> creative director</footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <img src="/img/client_3.png" alt="client_face">
+                        <blockquote>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa blanditiis dignissimos eius doloremque nam illum rem id architecto reiciendis natus, totam sint praesentium, minus quia dolorem tempore, corrupti mollitia.</p>
+                            <footer class="text-uppercase"><span>darwin michele </span> project manager</footer>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <img src="/img/client_4.png" alt="client_face">
+                        <blockquote>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa blanditiis dignissimos eius doloremque nam illum rem id architecto reiciendis natus, totam sint praesentium, minus quia dolorem tempore, corrupti mollitia.</p>
+                            <footer class="text-uppercase"><span>madam elisabeth </span> creative director</footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </div>
       <!-- /Clients section -->
       <!-- Subscription section -->
+      <div class="Subscription">
+        <div class="container">
+            <div class="text-center subscription-head">
+                <h2 class="text-uppercase">newsletter</h2>
+                <p>Lorem ipsum is simply dummy business industry</p> 
+            </div>
+            <div class="row heroform">
+                <form class="form-group">
+                    <div class="col-sm-4 form-group">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon"><i class="fas fa-user"></i></span>
+                            <input type="text" class="form-control" placeholder="Full name">
+                        </div>
+                      </div>
+                    <div class="col-sm-5 form-group">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon"><i class="fas fa-envelope"></i></span>
+                            <input type="email" class="form-control" placeholder="Email Address">
+                        </div>
+                    </div>
+                    <button type="submit" class="col-sm-3 btn btn-lg btn-warning text-uppercase">subscribe now</button>
+                  </form>
+            </div>
+            <div class="map-dot">
+                <div class="row text-center">
+                    <div class="col-sm-4 col-sm-offset-4 text-center">
+                        <div class="map-circle text-center">
+                            <h4 class="text-uppercase">address</h4>
+                            <p>business street</p>
+                            <p>Second north section</p>
+                            <address>Bavani nagar 88769</address>
+                            <p class="tel">Call : 9879976999</p>
+                            <p>info@businessface.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2 col-sm-offset-5 text-center">
+                        <img src="/img/Logo.png" alt="logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
       <!-- /Subscription section -->
     </main>
     <footer>
       <!-- Navbar section -->
+      <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span><i class="fas fa-bars"></i> </span>                      
+                </button>
+              </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav text-uppercase">
+                        <li><a class="navbar-text" href="#">home</a></li>
+                        <li><a class="navbar-text" href="#">service</a></li>
+                        <li><a class="navbar-text" href="#">about us</a></li>
+                        <li><a class="navbar-text" href="#">pricing table</a></li>
+                        <li><a class="navbar-text" href="#">how it work</a></li>
+                        <li><a class="navbar-text" href="#">happy clients</a></li>
+                        <li><a class="navbar-text" href="#">contact us</a></li>
+                      </ul>
+            </div>
+        </div>
+      </nav>
       <!-- /Navbar section -->
+      <!-- social section -->
+      <div class="container text-center">
+        <p class="social-phone"><i class="fas fa-phone-alt"></i> +987 9976 999</p>
+        <p class="social-icons">
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-google-plus-g"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </p>
+      </div>
+      <!-- /social section -->
       <!-- Copyight section -->
+      <div class="container-fluid text-center copyright">
+          <p>All contents © copyright 2014 Business Theme. All rights reserved Designeed by : akhilwebfolio</p>
+      </div>
       <!-- /Copyright section -->
     </footer>
+    <script src="/bootstrap.min.js"></script>
 </body>
 </html>
