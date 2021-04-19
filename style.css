@@ -246,3 +246,8 @@ margin-bottom: 60px;
     line-height: 3em;
     background-color: blue;
 }
+
+.fa-bars {
+    font-size: 3em;
+    text-align: center;
+}
