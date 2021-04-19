@@ -13,7 +13,7 @@
     src: url("/fonts/Gotham\ Black\ Regular.ttf");
 }
 
-h2, h3, h4, button {
+h2, h3, h4, h5, button {
     font-family: "Gotham_black";
 }
 
@@ -102,15 +102,12 @@ p {
 .price {
     background-color: lightblue;
     padding-top: 130px;
+    margin-bottom: 195px;
+    padding-bottom: 195px;
 }
 
 .price-panel {
     margin-top: 50px;
-    margin-bottom: 195px;
-}
-.price-panel .col-sm-4 {
-    margin: 0;
-    padding: 0;
 }
 
 .price-current {
@@ -144,3 +141,80 @@ p {
     transform: scaleY(1.1);
 }
 
+.hiw {
+    margin-top: 154px;
+    margin-bottom: 150px;
+}
+
+.flow {
+    margin-top: 75px;
+    margin-bottom: 3em;
+    font-size: 5em;
+    color: blue;
+}
+
+.flowstep {
+    margin-bottom: 90px;
+}
+
+.clients {
+    background-color: orange;
+    margin-top: 140px;
+    margin-bottom: 155px;
+    padding-top: 140px;
+    padding-bottom: 155px;
+}
+
+.clients-head {
+color: white;
+margin-bottom: 60px;
+}
+
+.card {
+    padding: 1em;
+    background-color: white;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+.card img {
+    float: left;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+.card p {
+    padding-left: 3em;
+}
+
+.card span {
+    color: orange;
+}
+
+.subscription-head {
+    margin-bottom: 3em;
+}
+
+.map-dot {
+    background-image: url("/img/map-dot.png");
+    height: 40em;
+}
+
+.map-circle {
+    margin-top: 5em;
+    background-image: url("/img/map-circle.png");
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: auto;
+    height: 25em;
+    font-family: "OpenSans";
+    color: rgb(123, 123, 123);
+}
+
+.map-circle h4 {
+    padding-top: 4em;
+    color: white;
+}
+
+.map-circle p:last-of-type {
+    color: orange;
+}
