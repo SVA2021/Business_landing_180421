@@ -218,3 +218,31 @@ margin-bottom: 60px;
 .map-circle p:last-of-type {
     color: orange;
 }
+
+.social-phone {
+    color: rgb(57, 75, 80);
+    font-family: "Lato_regular";
+    font-size: 3em;
+}
+
+.social-icons {
+    color: blue;
+    font-size: 2em;
+}
+
+.social-icons .fa-twitter {
+    color: orange;
+}
+
+.social-icons i {
+    margin: 1em 1em;
+}
+
+.copyright {
+    color: white;
+    font-family: "OpenSans";
+    height: 3em;
+    font-size: 1em;
+    line-height: 3em;
+    background-color: blue;
+}
