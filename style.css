@@ -12,6 +12,14 @@
     font-family: "Gotham_black";
     src: url("/fonts/Gotham\ Black\ Regular.ttf");
 }
+
+h2, h3, h4, button {
+    font-family: "Gotham_black";
+}
+
+p {
+    font-family: "Lato_regular";
+}
 .container {
     max-width: 1170px;
 }
@@ -22,7 +30,6 @@
 
 .navbar-text {
     color: black;
-    text-transform: uppercase;
     line-height: 1.2;
     font-family: "Lato_regular";
 }
@@ -30,44 +37,110 @@
 .hero {
     background-color: #709dca;
     color: white;
+    margin: 110px auto;
 }
 
 .hero > div > h2 {
     margin-top: 110px;
-    text-transform: uppercase;
-    font-family: "Gotham_black";
-    text-align: center;
-    font-size: 35px;
 }
 
 .hero > div > p {
-    font-family: "Gotham_black";
-    text-align: center;
-    font-size: 12px;
+    /*font-family: "Lato_regular";*/
     margin-bottom: 30px;
 }
 
 .heroform{
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   padding: 0 40px;
-  font-family: sans-serif;
 }
 
 .carousel-inner > .item > img {
     margin: 50px auto;
   }
 
-
-/*
-.navbar li {
-
+.services {
+    color: black;
+    font-family: "OpenSans";
+    margin-bottom: 80px;
 }
-/*
-.active a{ 
-    display: block;
-    margin: auto, 0;
-  border-radius: 2px;
-  background-color: rgb(255, 187, 66) !important; 
-  width: 81px;
-  height: 34px;
-} */
+
+.service-item i {
+    font-size: 3em;
+    float: left;
+    padding-top: 0.5em;
+}
+.fa-clock {
+    color: red;
+}
+
+.service-item {
+    margin-bottom: 3em;
+}
+
+.service-item h4 {
+    padding-left: 4em;
+    font-family: "OpenSans";
+}
+
+.service-item p {
+    padding-left: 5em;
+}
+
+.fa-cog, .fa-graduation-cap, .fa-rocket, .fa-file-code, .fa-dollar-sign {
+    color: blue;
+}
+
+.aboutUs {
+    color: white;
+    background-color: orange;
+}
+
+.aboutUs-text {
+    padding: 10% 5em;
+}
+
+.price {
+    background-color: lightblue;
+    padding-top: 130px;
+}
+
+.price-panel {
+    margin-top: 50px;
+    margin-bottom: 195px;
+}
+.price-panel .col-sm-4 {
+    margin: 0;
+    padding: 0;
+}
+
+.price-current {
+    font-family: "Lato_regular";
+}
+.price-current strong{
+  font-size: 60px;
+  color: rgb(255, 187, 66);
+  font-weight: bold;
+}
+
+.price-current .fas {
+    color: rgb(255, 187, 66);
+    font-size: 0.5em;
+    vertical-align: super;
+}
+
+.price-current hr {
+    width: 80%;
+    border: 1px solid gray;
+}
+
+.price-current p {
+    font-family: "Lato_regular";
+    font-size: 1em;
+    line-height: 1;
+}
+.premium {
+    background-color: blue;
+    color: white;
+    transform: scaleY(1.1);
+}
+
